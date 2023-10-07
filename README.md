@@ -54,7 +54,7 @@ Replace `path/to/image.jpg` with the path to the image for which you want to gen
 
 ## Dataset
 
-This project uses the [COCO dataset](http://cocodataset.org/) for training and evaluation. You can download the dataset and preprocess it using the provided scripts in the `data` directory. Follow the instructions in the `data/README.md` file to set up the dataset.
+This project uses the [Flickr8k](https://www.kaggle.com/datasets/adityajn105/flickr8k) for training and evaluation. You can download the dataset and preprocess it using the provided scripts in the directory itself. 
 
 ## Training
 
