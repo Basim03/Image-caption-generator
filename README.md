@@ -1,56 +1,92 @@
-***README***
+# Image Caption Generator using CNN-RNN with Xception Model
 
-**Image Caption Generator 🖼️💬**
+## Overview
 
-This repository contains a Python implementation of an image caption generator. The model is trained on the Flickr8k dataset, which consists of 8,000 images with 5 captions each. The model uses a convolutional neural network (CNN) to extract features from the image, and then a recurrent neural network (RNN) to generate a caption based on the extracted features.
+This project implements an image caption generator using a Convolutional Neural Network (CNN) for feature extraction and a Recurrent Neural Network (RNN) with the Xception model as the backbone. It generates descriptive captions for images, allowing computers to understand and describe visual content.
 
-To use the image caption generator, simply clone this repository and install the required dependencies:
+## Table of Contents
+
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Dataset](#dataset)
+4. [Training](#training)
+5. [Inference](#inference)
+6. [Results](#results)
+7. [Contributing](#contributing)
+8. [License](#license)
+
+## Installation
+
+1. Clone this repository:
+   ```
+   git clone https://github.com/your-username/image-caption-generator.git
+   cd image-caption-generator
+   ```
+
+2. Install the required dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+
+3. Download and preprocess the dataset (See [Dataset](#dataset) section).
+
+## Usage
+
+### Training
+
+To train the image caption generator, use the following command:
 
 ```
-pip install -r requirements.txt
+python train.py
 ```
 
-Once the dependencies are installed, you can run the following command to generate a caption for an image:
+This will train the model using the specified dataset and save the trained model weights.
+
+### Inference
+
+To generate captions for images using the trained model, use the following command:
 
 ```
-python image_caption_generator.py -i <image_path>
+python generate_caption.py --image_path path/to/image.jpg
 ```
 
-The `<image_path>` argument is the path to the image file that you want to generate a caption for.
+Replace `path/to/image.jpg` with the path to the image for which you want to generate a caption.
 
-For example, to generate a caption for the image file `image.jpg`, you would run the following command:
+## Dataset
 
-```
-python image_caption_generator.py -i image.jpg
-```
+This project uses the [COCO dataset](http://cocodataset.org/) for training and evaluation. You can download the dataset and preprocess it using the provided scripts in the `data` directory. Follow the instructions in the `data/README.md` file to set up the dataset.
 
-The model will then generate a caption for the image and print it to the console.
+## Training
 
-You can also use the image caption generator to generate captions for multiple images at once. To do this, simply pass a list of image paths to the `-i` argument.
+- The model architecture is based on the Xception model for feature extraction and an RNN (LSTM or GRU) for generating captions.
+- You can configure training hyperparameters in `config.py`.
+- Training data is loaded and preprocessed using the data pipeline defined in `data_loader.py`.
+- The model is trained using the `train.py` script.
 
-For example, to generate captions for the image files `image1.jpg` and `image2.jpg`, you would run the following command:
+## Inference
 
-```
-python image_caption_generator.py -i image1.jpg image2.jpg
-```
+- Inference is performed using the `generate_caption.py` script.
+- Provide the path to an image, and the model will generate a descriptive caption for it.
+- You can modify the model architecture and weights as needed for inference.
 
-The model will then generate captions for both images and print them to the console.
+## Results
 
-**Example Output**
+Describe the performance of your model, provide sample image-caption pairs, and any other relevant information about the results of your project.
 
+## Contributing
 
-![download (2)](https://github.com/Basim03/Image-caption-generator/assets/108823665/2a875ee6-b05e-4798-abdd-e359843a4b84)
-```
-Image Path: image.jpg
-Caption: A cat sitting on a couch. 🐈🛋️
-```
+Contributions to this project are welcome. To contribute, follow these steps:
 
-**Usage Tips**
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix: `git checkout -b feature-name`
+3. Make your changes and commit them: `git commit -m "Description of your changes"`
+4. Push your branch to your forked repository: `git push origin feature-name`
+5. Create a pull request on the main repository.
 
-* The image caption generator is still under development, so the generated captions may not always be accurate. However, the model is able to generate realistic and descriptive captions for a wide variety of images. 📸
-* The model is trained on the Flickr8k dataset, which consists of a wide variety of images. However, the model may not be able to generate accurate captions for images that are very different from the images in the training dataset. ⚠️
-* If you are using the image caption generator to generate captions for multiple images at once, the model may take longer to generate captions. ⏳
+## License
 
-**Feedback**
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-If you have any feedback or suggestions, please feel free to create an issue in this repository. 💬
+---
+
+Feel free to customize this README template to include specific details about your project and provide more information about the model architecture, training process, and results. A well-documented README will help others understand and use your image caption generator project.
