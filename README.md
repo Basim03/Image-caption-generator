@@ -8,7 +8,7 @@ This project implements an image caption generator using a Convolutional Neural 
 
 1. [Installation](#installation)
 2. [Usage](#usage)
-3. [Dataset](#The Dataset of Python based Project)
+3. [Dataset](#Dataset)
 4. [Training](#training)
 5. [Inference](#inference)
 6. [Results](#results)
@@ -52,7 +52,7 @@ python generate_caption.py --image_path path/to/image.jpg
 
 Replace `path/to/image.jpg` with the path to the image for which you want to generate a caption.
 
-# The Dataset of Python based Project
+# Dataset
 
 For the image caption generator, we will be using the Flickr_8K dataset. There are also other big datasets like Flickr_30K and MSCOCO dataset but it can take weeks just to train the network so we will be using a small Flickr8k dataset. The advantage of a huge dataset is that we can build better models.
 
