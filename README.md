@@ -19,7 +19,7 @@ This project implements an image caption generator using a Convolutional Neural 
 
 1. Clone this repository:
    ```
-   git clone https://github.com/your-username/image-caption-generator.git
+   git clone https://github.com/Basim03/Image-caption-generator.git
    cd image-caption-generator
    ```
 
