@@ -8,7 +8,7 @@ This project implements an image caption generator using a Convolutional Neural 
 
 1. [Installation](#installation)
 2. [Usage](#usage)
-3. [Dataset](#dataset)
+3. [Dataset](#The Dataset of Python based Project)
 4. [Training](#training)
 5. [Inference](#inference)
 6. [Results](#results)
