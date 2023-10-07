@@ -37,6 +37,8 @@ python image_caption_generator.py -i image1.jpg image2.jpg
 The model will then generate captions for both images and print them to the console.
 
 **Example Output**
+
+
 ![download (2)](https://github.com/Basim03/Image-caption-generator/assets/108823665/2a875ee6-b05e-4798-abdd-e359843a4b84)
 ```
 Image Path: image.jpg
