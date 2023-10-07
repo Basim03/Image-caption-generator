@@ -1,4 +1,4 @@
-**README**
+***README***
 
 **Image Caption Generator 🖼️💬**
 
@@ -39,6 +39,8 @@ The model will then generate captions for both images and print them to the cons
 **Example Output**
 
 ```
+![download (2)](https://github.com/Basim03/Image-caption-generator/assets/108823665/d090ea1b-c886-4c5a-aec4-319e9d04a3a9)
+
 Image Path: image.jpg
 Caption: A cat sitting on a couch. 🐈🛋️
 ```
