@@ -52,9 +52,16 @@ python generate_caption.py --image_path path/to/image.jpg
 
 Replace `path/to/image.jpg` with the path to the image for which you want to generate a caption.
 
-## Dataset
+# The Dataset of Python based Project
 
-This project uses the [Flickr8k](https://www.kaggle.com/datasets/adityajn105/flickr8k) for training and evaluation. You can download the dataset and preprocess it using the provided scripts in the directory itself. 
+For the image caption generator, we will be using the Flickr_8K dataset. There are also other big datasets like Flickr_30K and MSCOCO dataset but it can take weeks just to train the network so we will be using a small Flickr8k dataset. The advantage of a huge dataset is that we can build better models.
+
+Thanks to Jason Brownlee for providing a direct link to download the dataset (Size: 1GB).
+
+-->[Flicker8k_Dataset](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip)
+-->[Flickr_8k_text](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_text.zip)
+
+The Flickr_8k_text folder contains file Flickr8k.token which is the main file of our dataset that contains image name and their respective captions separated by newline(“\n”).
 
 ## Training
 
