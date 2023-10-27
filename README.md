@@ -78,8 +78,10 @@ The Flickr_8k_text folder contains file Flickr8k.token which is the main file of
 - You can modify the model architecture and weights as needed for inference.
 
 ## Results
-
-Describe the performance of your model, provide sample image-caption pairs, and any other relevant information about the results of your project.
+This is the result of our model 
+![image](https://github.com/Basim03/Image-caption-generator/assets/108823665/897f0dea-9fe6-4dbd-aac4-8c8c4acf9f7e)
+it can generate captions for the image accuractely 
+Sometimes it may ve incorrect but we can tamper with the hyper parameters to get better accuracy.
 
 ## Contributing
 
