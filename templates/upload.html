@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Caption Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        footer {
+            background-color: #000000;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        footer p {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Caption Generator</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="image">
+        <input type="submit" value="Upload">
+    </form>
+
+    <footer>
+        <p>Made by Mohammad Basim Siddiqui, Hetashi Guru Singh Pal, and Naman Raj Yadav</p>
+    </footer>
+</body>
+</html>
